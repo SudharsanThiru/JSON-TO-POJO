@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pojo</title>
+	<script type="text/javascript">
+	  function checkValidJson() {
+	     var jsonfile=document.getElementById("jsonInput").value;
+	     try {
+        JSON.parse(jsonfile);
+        alert("valid Json");
+         } catch (e) {
+        alert("Invalid Json");
+         }
+
+	 }
+	</script>
+	<style>
+	#jsonInput
+	{
+	top:50px;
+	left:50%;
+	height:300px;
+	width:580px;
+	
+	}
+	#button1{
+	
+	top:420px;
+	left:650px;
+	
+	align:center;
+	position:absolute;
+	}
+	#image{
+	top:15px;
+	left:427px;
+	height:60px;
+	width:40px;
+	position:absolute;
+	}
+	
+	</style>
+</head>
+<body >
+<center>
+<hr>
+	<h1> ROORTAN TECHNOLOGIES</h1><hr>
+	<img id="image" src="logo.png">
+	
+	<textarea id="jsonInput" rows="5" cols="75"></textarea>
+	<button id="button1" onclick="checkValidJson()" align="center">Validate JSON</button>
+</center>
+
+</body>
+</html>
