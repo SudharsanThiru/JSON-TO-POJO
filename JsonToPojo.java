@@ -1,4 +1,4 @@
-package com.cooltrickshome;  
+package com.grootantech;  
 import java.io.File;  
 import java.io.IOException;  
 import java.net.MalformedURLException;  
@@ -17,7 +17,7 @@ public class JsonToPojo {
       * @param args  
       */  
      public static void main(String[] args) {  
-          String packageName="com.cooltrickshome";  
+          String packageName="com.grootantech";  
           File inputJson= new File("."+File.separator+"input.json");  
           File outputPojoDirectory=new File("."+File.separator+"convertedPojo");  
           outputPojoDirectory.mkdirs();  
